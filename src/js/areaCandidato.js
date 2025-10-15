@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     const itemsPerPage = 6; 
-    const itemsList = document.getElementById("items-list");
+    const itemsList = document.getElementById("options-li");
     const pagination = document.getElementById("pagination");
 
 
-    const items = Array.from(itemsList.querySelectorAll(".items"));
+    const items = Array.from(itemsList.querySelectorAll(".options"));
     const totalPages = Math.ceil(items.length / itemsPerPage);
     let currentPage = 1;
 

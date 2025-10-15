@@ -132,10 +132,10 @@ a {
     border-radius: 6px;
     border: 1px solid #c1c1c1;
     padding: 2rem;
-    background-color: #ffffff; 
+    background-color: #ffffff;   
 }
 
-.topics-title {
+.topic-title{
     color: #191919;
     display: flex;
     margin-left: 4%;
@@ -143,12 +143,14 @@ a {
     margin-bottom: 6%;
 }
 
+
 .input-group {
     font-size: 23px;
     display: flex;
-    background-color: #e6e6e6;
+    background-color: #ffffff;
+    border: 0.1px solid rgba(0, 0, 0, 0.3);
     padding: 4px 4px 8px 8px;
-    border-radius: 26px;
+    border-radius: 6px;
     z-index: 1;
     width: 90%;
     margin: 25px auto;
@@ -175,65 +177,93 @@ a {
     outline: none;
 }
 
+.options {
+    width: 90%;
+    margin: 25px auto;
 
-.items-list {
+}
+
+.options-li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    margin: 25px auto 0 auto;
+    gap: 40px;
     list-style: none;
-    background-color: #ffffff;
-    border-radius: 24px;
-    padding: 14px;
-    width: 90%;
 }
 
-.items {
+.option-item {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+.option-title {
     display: flex;
-    margin-top: 12px;
-    background-color: #e6e8d3;
-    border-radius: 24px;
-    padding: 20px;
-    min-height: 250px;
-    width: 100%;
-}
-
-.item {
-    display: flex;
-    gap: 12px;
-    margin-top: 12px;
-    background-color: #fff;
-    border-radius: 24px;
-    padding: 14px;
-
-}
-
-.item-title {
-    font-size: 2rem;
-    color: #000000;
-    text-align: center;
-}
-
-.item-desc {
-    font-size: 1rem;
-    color: #000000;
-    text-align: center;
-    display: flex;
-    align-items: center; 
     justify-content: center;
-    margin-top: 20px;
-    font-weight: 500;
-    
+    align-items: center;
+    font-size: 26px;
+}
+
+.option-desc {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.option-infos {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    justify-content: start;
+    gap: 60px;
+    font-size: 16px ;
+    margin-bottom: 6%;
+}
+
+.option-publication-date-field {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+
+.option-duration-field {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-publication-date-field i{
+    color:#f28c28;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.option-duration-field i{
+    color:#f28c28;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.date {
+    font-weight: 400;
+}
+
+.duration {
+    font-weight: 400;
 }
 
 .button-default_02 {
     border: none;
     color: white;
     font-weight: 500;
-    border-radius: 6px; 
+    border-radius: 23px; 
     margin: 25px auto 0 auto;
     margin-top: 25px;
-    padding: 10px 50px;
+    padding: 10px 70px;
     background: #f28c28;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -251,12 +281,13 @@ a {
 }
 
 .pagination {
-    margin: 20px auto;
-    width: 20px;
+    position: absolute;
     display: flex;
-    gap: 12px;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
 }
-  
 
 .page-number {
     padding: 10px 15px;
@@ -280,7 +311,7 @@ a {
 
 /*footer*/
 footer {
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 0;
     width: 100%;
     height: auto;
@@ -289,8 +320,6 @@ footer {
 #footer-RHFoot {
     background-color: black;
     color: #fff;
-    position: relative;
-    top: 70px;
 
 }
 

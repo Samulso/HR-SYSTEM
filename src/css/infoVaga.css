@@ -126,83 +126,124 @@ a {
 }
 
 
-.options {
+
+.topics {
     width: 90%;
-    min-height: 100vh;
+    height: auto;
     margin: 0 auto;                
-    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 6px;
     border: 1px solid #c1c1c1;
     padding: 2rem;
     background-color: #ffffff;
-    position: relative; 
+
 }
 
-.options-li {
-    display: flex;
-    justify-content: center;
-    align-items: stretch; 
-    list-style: none;
-    gap: 80px; 
-    padding: 0;
-    margin: 0;
-  }
-  
-.option-item {
-    flex: 1; 
+.vacancy-infos-field {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    padding: 80px 20px;
-    box-sizing: border-box;
-}
-  
-
-.option-item:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: -45px;
-    top: 15%;
-    height: 80%;
-    width: 1px;
-    background-color: #c1c1c1;
-    opacity: 0.8;
+    margin-top: 2% ;
+    margin-left: 2%;
 }
 
-.option-item i {
-    font-size: 150px;
-    color: #f28c28;
-}
-
-.option-title {
-    margin-top: 60px;        
-    font-size: 22px;
+.vacancy-title {
+    display: flex;    
+    font-size: 32px;
     color: #333;
-    font-weight: 600;
 }
+
+.departamento-title {
+    font-size: 22px;
+    display: flex;
+    margin-top: 2px;
+    color: #333;
+
+}
+
+.vacancy-publication-date {
+    font-size: 22px;
+    display: flex;
+    margin-top: 40px;
+    color: #333;
+}
+
+.vacancy-locality-field {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.vacancy-locality-field i {
+    font-size: 18px;
+    color: #333;
+}
+
+.vacancy-locality {
+    font-size: 18px;
+    color: #333;
+    align-items: center;
+}
+
+.vacancy-city-field {
+    margin-top: 50px;
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+}
+
+.vacancy-city-field i {
+    font-size: 18px;
+    color: #333;
+}
+
+.vacancy-city {
+    font-size: 18px;
+    color: #333;
+    align-items: center;
+}
+
+
+.vacancy-description-header { 
+    display: flex;  
+    align-items: center; 
+    cursor: pointer; 
+    gap: 8px;
+    margin-top: 30px;
+    margin-left: 4px;
+} 
+.arrow { 
+    transition: transform 0.3s ease;
+    color: #333; 
+} 
+.arrow.rotate { 
+    transform: rotate(90deg); 
+} 
+.content { 
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.4s ease; 
+} 
+.content.show { 
+    max-height: 200px; /* altura quando expandido */ 
+} 
 
 .button-default_02 {
     border: none;
     color: white;
     font-weight: 500;
-    border-radius: 6px;
-    margin-top: 100px;
-    padding: 10px 50px;
+    margin-left: 56%;
+    border-radius: 40px;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    padding: 10px 40px;
     background: #f28c28;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 22px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
- }
+    font-size: 16px;
+}
 
 .button-default_02:hover {
     background-color: #f27228;
@@ -211,7 +252,7 @@ a {
 
 /*footer*/
 footer {
-    margin-top: 50px;
+    margin-top: 120px;
     margin-bottom: 0;
     width: 100%;
     height: auto;
@@ -220,8 +261,6 @@ footer {
 #footer-RHFoot {
     background-color: black;
     color: #fff;
-    position: relative;
-    top: 70 px;
 
 }
 
