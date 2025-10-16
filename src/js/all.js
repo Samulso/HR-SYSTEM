@@ -25,4 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadComponent("header[id^='header-']", "/src/components/footer-header.html");
   loadComponent("footer[id^='footer-']", "/src/components/footer-header.html");
+  loadComponent("header[id^='header-']", "/src/components/footer-header-2.html");
 });
