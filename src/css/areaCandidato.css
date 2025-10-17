@@ -130,7 +130,7 @@ a {
 .topics-1 {
     width: 90%;
     box-sizing: border-box;
-    margin: 25px auto;
+    margin: 250px auto;
     border-radius: 6px;
     border: 1px solid #c1c1c1;
     padding: 2rem;
@@ -299,7 +299,7 @@ a {
     gap: 10px;
 }
   
-  .page-number {
+.page-number {
     padding: 10px 15px;
     background-color: #eee;
     border-radius: 6px;
@@ -309,12 +309,12 @@ a {
     font-weight: 600;
 }
   
-  .page-number:hover {
+.page-number:hover {
     background-color: #f28c28;
     color: white;
 }
   
-  .page-number.active {
+.page-number.active {
     background-color: #f28c28;
     color: white;
 }
@@ -331,15 +331,16 @@ a {
 }
 
 .options-2 {
-    width: 90%;
+    width: 70%;
     margin: 25px auto;
 }
 
 .options-li-2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12%;
-    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 9rem;
+    margin-bottom: 100px;
+    justify-items: center;
 }
 
 .option-item-2 {
@@ -371,6 +372,10 @@ a {
 .option-img img {
     width: 290px;
     height: 202px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.1rem auto ;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -397,6 +402,34 @@ a {
 
 .button-default_03:hover {
     background-color: #f27228;
+}
+
+.pagination-2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.page-number {
+    padding: 10px 15px;
+    background-color: #eee;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+    font-weight: 600;
+}
+  
+.page-number:hover {
+    background-color: #f28c28;
+    color: white;
+}
+  
+.page-number.active {
+    background-color: #f28c28;
+    color: white;
 }
 
 
